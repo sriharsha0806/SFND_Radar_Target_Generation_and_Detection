@@ -82,7 +82,7 @@ subplot(2,1,1)
 % plot FFT output 
 plot(single_side_sig_fft); 
 ```
-![result](pics/FFT.png)
+![result](./pics/FFT.png)
 
 #### 4. doppler FFT (2st FFT)
 
