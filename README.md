@@ -172,6 +172,9 @@ RDM(:,union(1:(Td+Gd),end-(Td+Gd-1):end)) = 0;  % Columns
 
 
 ![result](./pics/2DCFAR.png)
+
+```Matlab
 figure('Name','CA-CFAR Filtered RDM')
 surf(doppler_axis,range_axis,RDM);
 colorbar;
+```
