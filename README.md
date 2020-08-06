@@ -82,7 +82,7 @@ subplot(2,1,1)
 % plot FFT output 
 plot(single_side_sig_fft); 
 ```
-![result](pics/FFT.png)
+![result](./pics/FFT.fig)
 
 #### 4. doppler FFT (2st FFT)
 
@@ -104,7 +104,7 @@ doppler_axis = linspace(-100,100,Nd);
 range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
 figure,surf(doppler_axis,range_axis,RDM);
 ```
-![result](pics/doppler_map.fig)
+![result](./pics/doppler_map.fig)
 
 #### 5. 2D CFAR
 Implement the 2D CFAR process on the output of 2D FFT operation, i.e the Range Doppler Map.
@@ -171,7 +171,7 @@ RDM(:,union(1:(Td+Gd),end-(Td+Gd-1):end)) = 0;  % Columns
 ```
 
 
-![result](pics/2DCFAR.PNG)
+![result](./pics/2DCFAR.PNG)
 figure('Name','CA-CFAR Filtered RDM')
 surf(doppler_axis,range_axis,RDM);
 colorbar;
